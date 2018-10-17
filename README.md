@@ -1,14 +1,19 @@
-# MariaDB Cluster WEB UI
+# MariaDB Cluster Monitoring
 
-WEB monitoring interface for a MariaDB cluster
+a monitoring interface for a MariaDB cluster
 
-![Screenshot](https://raw.githubusercontent.com/Jooyeshgar/MariaDBClusterWebUI/master/assets/screenshot1.png)
+![Screenshot](https://raw.githubusercontent.com/Jooyeshgar/MariaDB-Cluster-Monitoring/master/assets/screenshot1.png)
 
 
 ## Installation
 
+copy entire file into your root of PHP web server.
+
 ```bash
-pip3 install -r requirements.txt
+cd /var/www/html
+git clone https://github.com/Jooyeshgar/MariaDB-Cluster-Monitoring.git
+cd MariaDB-Cluster-Monitoring
+composer install
 mv nodes-default.conf nodes.conf
 vi nodes.conf
 ```
@@ -16,5 +21,5 @@ vi nodes.conf
 ## Run
 
 ```bash
-python3 main.py
+visit http://localhost/MariaDB-Cluster-Monitoring/
 ```
